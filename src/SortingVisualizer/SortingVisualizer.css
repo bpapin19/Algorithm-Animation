@@ -32,11 +32,13 @@ h1 {
 
 p {
     color: white;
+    padding-bottom: 5px;
 }
 
 .value {
     color: turquoise;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-family: "Verdana";
 }
 
