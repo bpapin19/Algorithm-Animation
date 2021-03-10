@@ -1,0 +1,2 @@
+site link:   https://bpapin19.github.io/algorithm-animation/
+GitHub link: https://github.com/bpapin19/algorithm-animation/

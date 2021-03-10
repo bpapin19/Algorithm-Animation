@@ -67,17 +67,7 @@ export default class SortingVisualizer extends React.Component {
                 }, i * this.state.ANIMATION_SPEED_MS);
             }
         }
-        // await this.colorWhenDone(animations);
     }
-
-    // colorWhenDone(animations) {
-    //     for (let i = 0; i < animations.length; i++) {
-    //         const arrayBars = document.getElementsByClassName('array-bar');
-    //         const barStyle = arrayBars[i].style;
-    //         barStyle.backgroundColor = SECONDARY_COLOR;
-    //         console.log(arrayBars[i]);
-    //     }
-    // }
 
     quickSort() {
         const animations = getQuickSortAnimations(this.state.array);
@@ -91,7 +81,7 @@ export default class SortingVisualizer extends React.Component {
                 const partBarStyle = arrayBars[barIndex].style;
                 setTimeout(() => {
                     partBarStyle.backgroundColor = color;
-                }, i * this.state.ANIMATION_SPEED_MS)
+                }, i * this.state.ANIMATION_SPEED_MS);
             }
             if (isColorChange === true) {
                 const [comparison, barOneIndex, barTwoIndex] = animations[i];
@@ -152,36 +142,39 @@ export default class SortingVisualizer extends React.Component {
 
     return (
         <div>
-        <div className="array-container">
-            {array.map((value, idx) => (
-                <div className="array-bar" key={idx} 
-                    style={{
-                        backgroundColor: PRIMARY_COLOR,
-                        height: `${value}px`,
-                    }}>
+            <div className="topnav">
+            <h1 className="heading">Algorithm Animations</h1>
+            <p>Cycle through 4 different types of sorts.</p>
+                <Slider
+                    min={0}
+                    max={10}
+                    value={this.state.ANIMATION_SPEED_MS}
+                    orientation="horizontal"
+                    onChange={(value) => this.setSpeed(value)}
+                />
+                <div className='value'>Speed: {this.state.ANIMATION_SPEED_MS} ms</div>
+                <div className='reset_button'>
+                    <button className='button' onClick={() => this.resetArray()}>Generate New Array</button>
                 </div>
-            ))}
-        </div>
-        <div class="topnav">
-            <Slider
-                class='range-slider1'
-                min={0}
-                max={10}
-                value={this.state.ANIMATION_SPEED_MS}
-                orientation="horizontal"
-                onChange={(value) => this.setSpeed(value)}
-            />
-            <div className='value'>Speed: {this.state.ANIMATION_SPEED_MS} ms</div>
-            <div className='reset_button'>
-                <button className='button' onClick={() => this.resetArray()}>Generate New Array</button>
+                <div className='sort_buttons'>
+                    <button className='button' onClick={() => this.mergeSort()}>Merge Sort</button>
+                    <button className='button' onClick={() => this.quickSort()}>Quick Sort</button>
+                    <button className='button' onClick={() => this.selectionSort()}>Selection Sort</button>
+                    <button className='button' onClick={() => this.insertionSort()}>Insertion Sort</button>
+                </div>
             </div>
-            <div className='sort_buttons'>
-                <button className='button' onClick={() => this.mergeSort()}>Merge Sort</button>
-                <button className='button' onClick={() => this.quickSort()}>Quick Sort</button>
-                <button className='button' onClick={() => this.selectionSort()}>Selection Sort</button>
-                <button className='button' onClick={() => this.insertionSort()}>Insertion Sort</button>
+            <div class="array-body">
+                <div className="array-container">
+                    {array.map((value, idx) => (
+                        <div className="array-bar" key={idx} 
+                            style={{
+                                backgroundColor: PRIMARY_COLOR,
+                                height: `${value}px`,
+                            }}>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
         </div>
     );
     }
