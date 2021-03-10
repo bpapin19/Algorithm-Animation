@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/algorithm-animation/static/css/main.87b106a8.chunk.css",
-    "main.js": "/algorithm-animation/static/js/main.3fb505d1.chunk.js",
-    "main.js.map": "/algorithm-animation/static/js/main.3fb505d1.chunk.js.map",
+    "main.css": "/algorithm-animation/static/css/main.0d6e8e1c.chunk.css",
+    "main.js": "/algorithm-animation/static/js/main.52d13afe.chunk.js",
+    "main.js.map": "/algorithm-animation/static/js/main.52d13afe.chunk.js.map",
     "runtime-main.js": "/algorithm-animation/static/js/runtime-main.0a23e33a.js",
     "runtime-main.js.map": "/algorithm-animation/static/js/runtime-main.0a23e33a.js.map",
-    "static/css/2.34cf0530.chunk.css": "/algorithm-animation/static/css/2.34cf0530.chunk.css",
+    "static/css/2.6eb14f6a.chunk.css": "/algorithm-animation/static/css/2.6eb14f6a.chunk.css",
     "static/js/2.ed6927d4.chunk.js": "/algorithm-animation/static/js/2.ed6927d4.chunk.js",
     "static/js/2.ed6927d4.chunk.js.map": "/algorithm-animation/static/js/2.ed6927d4.chunk.js.map",
     "index.html": "/algorithm-animation/index.html",
-    "static/css/2.34cf0530.chunk.css.map": "/algorithm-animation/static/css/2.34cf0530.chunk.css.map",
-    "static/css/main.87b106a8.chunk.css.map": "/algorithm-animation/static/css/main.87b106a8.chunk.css.map",
+    "static/css/2.6eb14f6a.chunk.css.map": "/algorithm-animation/static/css/2.6eb14f6a.chunk.css.map",
+    "static/css/main.0d6e8e1c.chunk.css.map": "/algorithm-animation/static/css/main.0d6e8e1c.chunk.css.map",
     "static/js/2.ed6927d4.chunk.js.LICENSE.txt": "/algorithm-animation/static/js/2.ed6927d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0a23e33a.js",
-    "static/css/2.34cf0530.chunk.css",
+    "static/css/2.6eb14f6a.chunk.css",
     "static/js/2.ed6927d4.chunk.js",
-    "static/css/main.87b106a8.chunk.css",
-    "static/js/main.3fb505d1.chunk.js"
+    "static/css/main.0d6e8e1c.chunk.css",
+    "static/js/main.52d13afe.chunk.js"
   ]
 }
